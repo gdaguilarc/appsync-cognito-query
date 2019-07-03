@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+import * as uuid from 'uuid';
 import QueryManager from '../index';
 import { authCredentials, endpoint, mutation } from '../variables';
 
