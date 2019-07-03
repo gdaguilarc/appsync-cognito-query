@@ -1,4 +1,4 @@
-import * as v4 from 'uuid/v4';
+import uuid from 'uuid';
 import QueryManager from '../index';
 import { authCredentials, endpoint, mutation } from '../variables';
 
@@ -23,7 +23,7 @@ test('Mutation', async () => {
     authCredentials.password,
   );
 
-  const id = v4();
+  const id = uuid.v4();
   const query = mutation(id);
   expect(await manager.query(query)).toStrictEqual({
     createMessage: {
