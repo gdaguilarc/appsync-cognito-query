@@ -1,4 +1,4 @@
-import { v4 } from 'uuid';
+import v4 from 'uuid/v4';
 import QueryManager from '../index';
 import { authCredentials, endpoint, mutation } from '../variables';
 
