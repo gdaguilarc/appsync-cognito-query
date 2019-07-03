@@ -1,0 +1,43 @@
+{
+  "name": "appsync-cognito-query",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "A plugin to make easier the queries to appsync with a cognito auth user pool",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "contributes": {},
+  "repository": "git@github.com:gdaguilarc/appsync-cognito-query.git",
+  "author": "David Aguilar <gd.aguilarc@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.2"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "cognito",
+    "appsync",
+    "auth",
+    "aws",
+    "Cognito",
+    "Appsync",
+    "query"
+  ]
+}
