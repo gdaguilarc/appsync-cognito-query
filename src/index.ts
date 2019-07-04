@@ -1,3 +1,3 @@
-import QueryManager from './QueryManager';
+import { init } from './core';
 
-export default QueryManager;
+export { init };

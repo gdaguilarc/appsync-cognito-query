@@ -1,9 +1,9 @@
 import * as uuid from 'uuid';
-import QueryManager from '../index';
+import * as acq from '../index';
 import { authCredentials, endpoint, mutation } from '../variables';
 
 test('Auth QueryManager', async () => {
-  const manager = new QueryManager(endpoint);
+  const manager = acq.init(endpoint);
   expect(
     typeof (await manager.authenticateUser(
       authCredentials.userPoolId,
@@ -15,7 +15,7 @@ test('Auth QueryManager', async () => {
 });
 
 test('Mutation', async () => {
-  const manager = new QueryManager(endpoint);
+  const manager = acq.init(endpoint);
   await manager.authenticateUser(
     authCredentials.userPoolId,
     authCredentials.clientId,
