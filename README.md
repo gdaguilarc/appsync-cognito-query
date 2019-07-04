@@ -8,25 +8,20 @@ Package that makes easier the graphql requests to appsync when the authenticatio
 
 After installing the package, import the query manager as any package other package like this:
 
-```
-const acq = require('appsync-cognito-query')
+```js
+const acq = require('appsync-cognito-query');
 ```
 
 Then we need to init the query manager and set the endpoint.
 
-```
+```js
 const manager = acq.init(YOUR_APPSYNC_ENDPOINT);
 ```
 
 Then we can access the main functions of the manager. For a mutation query for example first we need to authenticate and then we can use graphql with the query method:
 
-```
-await manager.authenticateUser(
-      YOUR_USER_POOL_ID,
-      YOUR_CLIENT_ID,
-      COGNITO_USER_USERNAME,
-      COGNITO_USER_PASSWORD,
-    )
+```js
+await manager.authenticateUser(YOUR_USER_POOL_ID, YOUR_CLIENT_ID, COGNITO_USER_USERNAME, COGNITO_USER_PASSWORD);
 
 const mutation = `
         mutation CreateMessage {
@@ -51,13 +46,13 @@ await manager.query(mutation);
 
 This NPM package is installed such as any other one with the next command:
 
-```
+```terminal
 npm install appsync-cognito-query
 ```
 
 ## Running the tests
 
-'''
+'''terminal
 npm run test
 '''
 
