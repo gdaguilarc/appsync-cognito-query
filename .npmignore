@@ -3,4 +3,3 @@ tsconfig.json
 tslint.json
 .prettierrc
 variables.ts
-lib/

@@ -52,9 +52,9 @@ npm install appsync-cognito-query
 
 ## Running the tests
 
-'''terminal
+```terminal
 npm run test
-'''
+```
 
 ## Built With
 

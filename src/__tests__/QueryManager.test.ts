@@ -3,6 +3,7 @@ import * as acq from '../index';
 import { authCredentials, endpoint, mutation } from '../variables';
 
 test('Auth QueryManager', async () => {
+  jest.setTimeout(10000);
   const manager = acq.init(endpoint);
   expect(
     typeof (await manager.authenticateUser(
@@ -15,6 +16,7 @@ test('Auth QueryManager', async () => {
 });
 
 test('Mutation', async () => {
+  jest.setTimeout(10000);
   const manager = acq.init(endpoint);
   await manager.authenticateUser(
     authCredentials.userPoolId,
