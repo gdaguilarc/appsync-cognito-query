@@ -3,3 +3,5 @@ tsconfig.json
 tslint.json
 .prettierrc
 variables.ts
+lib/variables.js 
+lib/variables.d.ts
