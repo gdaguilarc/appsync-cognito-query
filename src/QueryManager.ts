@@ -63,10 +63,7 @@ class QueryManager {
   }
 
   public async query(query: string): Promise<string> {
-    return this.client.request(query).catch(err => {
-      // tslint:disable-next-line: no-console
-      console.log(err.message);
-    });
+    return this.client.request(query);
   }
 }
 
