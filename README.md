@@ -1,6 +1,6 @@
 # appsync-cognito-query
 
-[![Build Status](https://travis-ci.org/gdaguilarc/appsync-cognito-query.svg?branch=master)](https://travis-ci.org/gdaguilarc/appsync-cognito-query) [![Coverage Status](https://coveralls.io/repos/github/gdaguilarc/appsync-cognito-query/badge.svg?branch=master)](https://coveralls.io/github/gdaguilarc/appsync-cognito-query?branch=master)
+![Node.js CI](https://github.com/gdaguilarc/appsync-cognito-query/workflows/Node.js%20CI/badge.svg) ![Coverage Status](https://coveralls.io/repos/github/gdaguilarc/appsync-cognito-query/badge.svg?branch=master)
 
 Package that makes easier the graphql requests to appsync when the authentication method is Cognito user pools
 
