@@ -1,6 +1,6 @@
 import * as uuid from 'uuid';
 import * as acq from '../index';
-import { authCredentials, endpoint, mutation } from '../variables';
+// import { authCredentials, endpoint, mutation } from '../variables';
 
 // test('Auth QueryManager', async () => {
 //   jest.setTimeout(10000);
